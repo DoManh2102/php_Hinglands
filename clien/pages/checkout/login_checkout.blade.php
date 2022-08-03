@@ -39,18 +39,30 @@
                 <form action="{{URL::to('/add-customer')}}" method="POST">
                     {{@csrf_field()}}
                     <div class="matkhau">
-                        <input type="" name="customer_name" placeholder="Họ và tên">
+                        <input id="hovaten" name="Họ và tên" placeholder="Họ và tên">
+                        <div style="margin-left: 70px;">
+                            <p id="error_hoten_obligatory" class="text-danger"></p>
+                        </div>
                     </div>
                     <div class="matkhau">
-                        <input type="" name="customer_email" placeholder="Email">
+                        <input id="email" name="Email" placeholder="Email">
+                        <div style="margin-left: 70px;">
+                            <p id="error_email" class="text-danger"></p>
+                        </div>
                     </div>
                     <div class="matkhau">
-                        <input type="password" name="customer_password" placeholder="Mật khẩu">
+                        <input id="password" name="Mật khẩu" placeholder="Mật khẩu">
+                        <div style="margin-left: 70px;">
+                            <p id="error_password_minleng_maxleng" class="text-danger"></p>
+                        </div>
                     </div>
                     <div class="matkhau">
-                        <input type="" name="customer_phone" placeholder="Phone">
+                        <input id="soDT" name="Số điện thoại" placeholder="Phone">
+                        <div style="margin-left: 70px;">
+                            <p id="error_phone" class="text-danger"></p>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-light" style="margin-left: 200px; width: 100px; margin-top: 10px;">Đăng kí</button>
+                    <button id="btn_dangki" type="submit" class="btn btn-light" style="margin-left: 200px; width: 100px; margin-top: 10px;">Đăng kí</button>
                 </form>
 
             </div>

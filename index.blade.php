@@ -44,8 +44,6 @@
     <!-- CSS Giỏ hàng -->
     <link rel="stylesheet" href="{{asset('public/fontend/css/gio_hang.css')}}">
 
-
-
     <!-- CSS Giao hàng -->
     <link rel="stylesheet" href="{{asset('public/fontend/css/giaohang.css')}}">
 
@@ -303,6 +301,13 @@
 
     <!-- Boostrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- validation -->
+    <script src="{{asset('public/fontend/js/validation.js')}}"></script>
+
+    <!-- main js -->
+    <script src="{{asset('public/fontend/js/main.js')}}"></script>
+
 
     <!-- owl carousel -->
     <script src="{{asset('public/fontend/js/owl.carousel.min.js')}}"></script>

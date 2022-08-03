@@ -7,7 +7,7 @@
     $content = Cart::content();
     ?>
     <div id="giohang" style="height: 100%;">
-        <div id="sp">
+        <div id="sp" style="margin-left: 100px;">
             <div id="conten">
                 <p>Sản phẩm</p>
                 <p class="gia">Giá</p>
@@ -18,8 +18,8 @@
             <br>
             @foreach($content as $v_content)
             <div id="luachon">
-                <div style="width: 200px;">
-                    <img src="{{asset('public/storage/product/'.$v_content->options->image)}}" style="object-fit: cover;" alt="{{$v_content->name}}">
+                <div style="width: 200px;" style="align-items: left;">
+                    <img src="{{asset('public/storage/product/'.$v_content->options->image)}}" style="object-fit: cover; margin-left: 10px;" alt="{{$v_content->name}}">
                     <p>{{$v_content->name}}</p>
                 </div>
                 <p style="margin: 40px 60px 40px 10px;">{{number_format($v_content->price)}} VNĐ</p>
